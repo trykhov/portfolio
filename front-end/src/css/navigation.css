@@ -1,0 +1,74 @@
+.nav-bar {
+  height: 80px;
+  background-color: black;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.tab-container {
+  padding: 27px;
+  float: right;
+}
+
+.logo {
+  display: inline;
+  color: #36454F;
+  font-family: 'Lobster', cursive;
+  font-size: 21px;
+}
+
+.tab {
+  display: inline;
+  color: #36454F;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 19px;
+  margin-left: 40px;
+}
+
+.tab:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.icon {
+  color: #36454F;
+}
+
+
+@media (max-width: 940px) {
+  .tab-container {
+    display: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    padding: 16px;
+    top: 0;
+    right: 0;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 27px 0;
+  }
+}
+
+/* desktop / laptop */
+@media (min-width: 940px) {
+  .dropdown {
+    display: none;
+  }
+
+  .logo {
+    float: left;
+    font-weight: 600;
+    padding: 27px;
+  }
+}
