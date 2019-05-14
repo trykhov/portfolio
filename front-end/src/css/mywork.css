@@ -1,3 +1,15 @@
+a {
+  text-decoration: none;
+}
+
+.border {
+  width: 30%;
+  border-bottom: solid;
+  border-color: gray;
+  border-width: 2px;
+  margin: 0 auto;
+}
+
 #container {
   width: 90%;
   margin: 0 auto;
@@ -5,8 +17,63 @@
 
 #container h2 {
   color: black;
+  font-size: 5vw;
+  font-family: "Montserrat", cursive;
+  text-align: center;
+}
+
+.img-container {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.description {
+  width: 45%;
+}
+
+.notes {
+  display: inline-block;
+  font-family: "Montserrat", cursive;
+  line-height: 26pt;
 }
 
 #portfolio {
 
+}
+
+.project {
+  overflow: auto;
+  padding: 40px;
+}
+
+.project img {
+  height: 100%;
+  width: 100%;
+}
+
+.source {
+  margin-right: 10px;
+  font-family: "Montserrat", cursive;
+  font-weight: bold;
+}
+
+
+/* Mobile */
+@media (max-width: 1120px) {
+  .description, .img-container {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1120px) {
+  .project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
