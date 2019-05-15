@@ -14,6 +14,7 @@
   width: 90%;
   margin: 0 auto;
   padding: 20px 0;
+  overflow: auto;
 }
 
 #contact h2 {
@@ -22,7 +23,56 @@
   font-family: "Montserrat", cursive;
 }
 
+.fa-github {
+  color: #fff;
+}
+
+.fa-linkedin {
+  color: #0077B5;
+}
+
+.fa-twitter {
+  color: #1DA1F2;
+}
+
+
+
+#follow h2 {
+  color: #fff;
+}
+
+#hold-both {
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 #left-side {
   width: 50%;
   margin: 10px 0;
+}
+
+#right-side {
+  width: 50%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+
+/*********************** MOBILE ***************************/
+
+@media (max-width: 600px) {
+  #left-side, #right-side {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

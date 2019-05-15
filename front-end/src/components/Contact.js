@@ -17,6 +17,7 @@ class Contact extends React.Component {
       <section id="contact">
         <div id="contact-container">
           <h2>Let's Connect</h2>
+          <div id="hold-both">
             <div id="left-side">
               <form className="ui form">
                 <div className="two fields client-info">
@@ -34,8 +35,16 @@ class Contact extends React.Component {
               </form>
             </div>
             <div id="right-side">
-
+              <div id="follow">
+                <h2>Also look at my:</h2>
+                <div id="social">
+                  <i className="fab fa-linkedin fa-3x"></i>
+                  <i className="fab fa-github fa-3x"></i>
+                  <i className="fab fa-twitter fa-3x"></i>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
       </section>
     )
