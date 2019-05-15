@@ -5,14 +5,14 @@ class Navigation extends React.Component {
 
   state = {
     dropdown: false,
-    icon: <i className="fas fa-bars fa-3x icon"></i>
+    icon: <i className="fas fa-bars fa-3x"></i>
   }
 
   clickDropDown = () => {
     if(this.state.dropdown) {
-      this.setState({dropdown: !this.state.dropdown, icon: <i className="fas fa-bars fa-3x icon"></i>});
+      this.setState({dropdown: !this.state.dropdown, icon: <i className="fas fa-bars fa-3x"></i>});
     } else {
-      this.setState({dropdown: !this.state.dropdown, icon: <i className="fas fa-times fa-3x icon"></i>});
+      this.setState({dropdown: !this.state.dropdown, icon: <i className="fas fa-times fa-3x"></i>});
     }
     return this.state.icon
   }
@@ -21,7 +21,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className="nav-bar">
-        <div className="content">
+        <div className="options">
           <div className="logo">TK.</div>
           <div className="tab-container">
             <div className="tab">About Me</div>
@@ -29,7 +29,7 @@ class Navigation extends React.Component {
             <div className="tab">Portfolio</div>
             <div className="tab">Contact</div>
           </div>
-          <div onClick={this.clickDropDown} className="dropdown">
+          <div onClick={this.clickDropDown} className="drop-menu">
             {this.state.icon}
           </div>
         </div>

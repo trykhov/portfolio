@@ -10,17 +10,6 @@ a {
   margin: 0 auto;
 }
 
-#container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-#container h2 {
-  color: black;
-  font-size: 5vw;
-  font-family: "Montserrat", cursive;
-  text-align: center;
-}
 
 .img-container {
   width: 45%;
@@ -30,8 +19,12 @@ a {
   flex-wrap: wrap;
 }
 
-.description {
+.info {
   width: 45%;
+}
+
+.info p {
+  font-size: 1.3vw;
 }
 
 .notes {
@@ -40,8 +33,17 @@ a {
   line-height: 26pt;
 }
 
-#portfolio {
+#portfolio-container {
+  width: 90%;
+  margin: 0 auto;
+}
 
+#portfolio-container h2 {
+  color: black;
+  font-size: 5vw;
+  margin: 15px 0;
+  font-family: "Montserrat", cursive;
+  text-align: center;
 }
 
 .project {
@@ -63,9 +65,14 @@ a {
 
 /* Mobile */
 @media (max-width: 1120px) {
-  .description, .img-container {
+  .info, .img-container {
+    text-align: center;
     margin: 0 auto;
     width: 100%;
+  }
+
+  .info p {
+    font-size: 16px;
   }
 }
 

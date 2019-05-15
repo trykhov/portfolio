@@ -1,11 +1,4 @@
-.content {
-  width: 90%;
-  margin: 0 auto;
-  overflow: auto;
-  background-color: black;
-}
-
-.icon {
+.fas {
   color: #fff;
 }
 
@@ -22,6 +15,13 @@
   background-color: black;
   position: fixed;
   z-index: 1;
+}
+
+.options {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+  background-color: black;
 }
 
 .tab {
@@ -52,14 +52,14 @@
     display: none;
   }
 
-  .dropdown {
+  .drop-menu {
     position: absolute;
     padding: 16px 30px;
     top: 0;
     right: 0;
   }
 
-  .content {
+  .options {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +69,7 @@
 
 /* desktop / laptop */
 @media (min-width: 1000px) {
-  .dropdown {
+  .drop-menu {
     display: none;
   }
 

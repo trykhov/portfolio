@@ -1,0 +1,28 @@
+.client-info {
+  display: flex;
+}
+
+#client-message {
+  margin-bottom: 10px;
+}
+
+#contact {
+  background-color: black;
+}
+
+#contact-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#contact h2 {
+  color: white;
+  display: inline;
+  font-family: "Montserrat", cursive;
+}
+
+#left-side {
+  width: 50%;
+  margin: 10px 0;
+}

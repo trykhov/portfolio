@@ -9,13 +9,13 @@ class MyWork extends React.Component {
   render() {
     return(
       <section id="portfolio">
-        <div id="container">
+        <div id="portfolio-container">
           <h2> Portfolio </h2>
           <div className="project">
             <div className="img-container">
               <img src={g12} />
             </div>
-            <div className="description">
+            <div className="info">
               <p className="notes">
                 This is a fullstack website that I made for a growing trucking company located in Southern California.
                 I used <strong>React</strong> as a framework to display the content of the site. Along with the
@@ -31,7 +31,7 @@ class MyWork extends React.Component {
             <div className="img-container">
               <img src={yugioh} />
             </div>
-            <div className="description">
+            <div className="info">
               <p className="notes">
               This site was a fun project that I did for a proof of concept for a website that I found online.
               The idea was to create a responsive website and change its design in order to make it look less
@@ -46,7 +46,7 @@ class MyWork extends React.Component {
             <div className="img-container">
               <img src={marvel} />
             </div>
-            <div className="description">
+            <div className="info">
               <p className="notes">
                 This was another fun project that I made when I was practicing my <strong>JavaScript</strong>. It's a memory game
                 based off of the Marvel movies. One awesome that I implemented is every element is randomly placed.
