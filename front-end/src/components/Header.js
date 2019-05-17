@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import background from '../img/background.jpg';
 import profile from '../img/profile.png';
 import js from '../img/js.png';
@@ -31,8 +32,12 @@ class Header extends React.Component {
               <img id="tech-image" src={python} alt="python" title="python"/>
             </div>
             <div id="more-info">
-              <div>View Portfolio</div>
-              <div>Hire Me</div>
+              <Link smooth to='/#portfolio'>
+                <div>View Portfolio</div>
+              </Link>
+              <Link smooth to='/#contact'>
+                <div>Hire Me</div>
+              </Link>
             </div>
           </div>
           <div className="picture">

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import '../css/navigation.css'
 
 class Navigation extends React.Component {
@@ -22,12 +24,22 @@ class Navigation extends React.Component {
     return (
       <div className="nav-bar">
         <div className="options">
-          <div className="logo">TK.</div>
+          <Link to='/'>
+            <div onClick={() => window.scrollTo(0,0)} className="logo">TK.</div>
+          </Link>
           <div className="tab-container">
-            <div className="tab">About Me</div>
-            <div className="tab">Resumé</div>
-            <div className="tab">Portfolio</div>
-            <div className="tab">Contact</div>
+            <HashLink smooth to="/#about-me">
+              <div className="tab"> About Me </div>
+            </HashLink>
+            <Link to="/resume">
+              <div onClick={() => window.scrollTo(0,0)} className="tab"> Resumé </div>
+            </Link>
+            <HashLink smooth to='/#portfolio'>
+              <div className="tab">Portfolio</div>
+            </HashLink>
+            <HashLink smooth to='/#contact'>
+              <div className="tab">Contact</div>
+            </HashLink>
           </div>
           <div onClick={this.clickDropDown} className="drop-menu">
             {this.state.icon}

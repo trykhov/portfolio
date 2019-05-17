@@ -1,0 +1,91 @@
+
+.company {
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+#content-info {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 26pt;
+}
+
+.degree {
+  margin-left: 60px;
+}
+
+#education img{
+  width: 50px;
+  height: 50px;
+}
+
+.exp-box {
+  margin: 20px 0;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grad-info {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+#my-name {
+  text-align: center;
+}
+
+#my-name h1 {
+  color: black;
+}
+
+#resume-page {
+  font-family: 'Montserrat', cursive;
+}
+
+#resume-page h2 {
+  text-decoration: underline;
+  font-family: 'Montserrat', cursive;
+}
+
+.resume-section {
+  margin: 20px 0;
+}
+
+.school {
+  overflow: auto;
+}
+
+.symbol {
+  display: flex;
+  align-items: center;
+}
+
+.school h3 {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+#technical-skills p {
+  letter-spacing: 1pt;
+}
+
+
+
+/*********************** Mobile **************************/
+@media (max-width: 800px) {
+  .company {
+    font-size: 16px;
+  }
+
+  .graduation {
+    float: none;
+    margin-left: 60px;
+  }
+}

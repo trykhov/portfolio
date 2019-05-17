@@ -1,0 +1,35 @@
+#about-container {
+  width: 90%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+#about-image {
+  width: 50%;
+}
+
+#about-me {
+  width: 100%;
+  overflow: auto;
+  padding: 20px 0;
+  background-color: #dadddf;
+}
+
+#about-text {
+  width: 50%;
+  line-height: 26pt;
+  font-family: "Montserrat", cursive;
+  font-size: 1.3vw;
+}
+
+/******************* Mobile *******************************/
+
+@media (max-width: 1000px) {
+  #about-text, #about-image {
+    width: 100%;
+  }
+
+  #about-text {
+    font-size: 16px;
+  }
+}

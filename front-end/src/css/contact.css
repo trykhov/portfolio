@@ -35,10 +35,14 @@
   color: #1DA1F2;
 }
 
-
+#follow {
+  text-align: center;
+  font-family: "Montserrat", cursive;
+}
 
 #follow h2 {
   color: #fff;
+  font-family: "Montserrat", cursive;
 }
 
 #hold-both {
@@ -56,23 +60,58 @@
 #right-side {
   width: 50%;
   overflow: auto;
-  display: flex;
-  justify-content: center;
+}
+
+.resume {
+  width: 40%;
+  background-color: #f5564e;
+  margin: 15px auto;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Montserrat", cursive;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.3vw;
 }
 
 #social {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 20px auto;
+  width: 50%;
 }
 
+#status {
+  width: 70%;
+  background-color: #0b8457;
+  margin: 0 auto 20px;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+#status h2 {
+  color: #dee1ec;
+}
+
+.ui.primary.button {
+  background-color: #f5564e;
+  font-family: "Montserrat", cursive;
+}
 
 
 /*********************** MOBILE ***************************/
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #left-side, #right-side {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .resume {
+    font-size: 16px;
+  }
+
+  #status {
+    width: 100%;
   }
 }
