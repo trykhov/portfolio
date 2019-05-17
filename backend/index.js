@@ -27,13 +27,19 @@ app.post('/send_email', function(req, res) {
   const from = req.body.email;
 
   const msg = {
-    to: keys.to,
-    from: 'test@example.com',
-    subject: 'Sending with Twilio SendGrid is Fun',
-    text: 'and easy to do anywhere, even with Node.js',
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    to: req.body.email,
+    from: keys.from,
+    subject: 'Confirmation Email',
+    text: 'Hi ' + req.body.name + ',',
+    html: `<p>Hi ${req.body.name},</p>`
+    + "<br>"
+    + "<p>This is just a confirmation email saying thank you for reaching out. I'll get back to you as soon as possible. In the meantime, please don't hesitate to email me if you have any questions.</p>"
+    + "<br>"
+    + "<p>Best regards, <p>"
+    + "<p>Try</p>"
   };
-  // sgMail.send(msg);
+
+  sgMail.send(msg);
 
 })
 
