@@ -48,15 +48,25 @@
 
 
 @media (max-width: 1000px) {
-  .tab-container {
-    display: none;
-  }
-
-  .drop-menu {
+  .drop-icon {
     position: absolute;
     padding: 16px 30px;
     top: 0;
     right: 0;
+  }
+
+
+  .tab {
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .tab-container {
+    display: none;
   }
 
   .options {
@@ -69,7 +79,11 @@
 
 /* desktop / laptop */
 @media (min-width: 1000px) {
-  .drop-menu {
+  #drop-menu {
+    display: none;
+  }
+
+  .drop-icon {
     display: none;
   }
 

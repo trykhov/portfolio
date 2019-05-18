@@ -16,7 +16,27 @@ class Navigation extends React.Component {
     } else {
       this.setState({dropdown: !this.state.dropdown, icon: <i className="fas fa-times fa-3x"></i>});
     }
-    return this.state.icon
+  }
+
+  dropMenu = () => {
+    if(this.state.dropdown) {
+      return (
+        <div id="drop-menu">
+          <HashLink smooth to="/#about-me">
+            <div onClick={this.clickDropDown} className="tab"> About Me </div>
+          </HashLink>
+          <Link to="/resume">
+            <div onClick={() => window.scrollTo(0,0)} className="tab"> Resumé </div>
+          </Link>
+          <HashLink smooth to='/#portfolio'>
+            <div onClick={this.clickDropDown} className="tab">Portfolio</div>
+          </HashLink>
+          <HashLink smooth to='/#contact'>
+            <div onClick={this.clickDropDown} className="tab">Contact</div>
+          </HashLink>
+        </div>
+      )
+    }
   }
 
 
@@ -41,10 +61,11 @@ class Navigation extends React.Component {
               <div className="tab">Contact</div>
             </HashLink>
           </div>
-          <div onClick={this.clickDropDown} className="drop-menu">
+          <div onClick={this.clickDropDown} className="drop-icon">
             {this.state.icon}
           </div>
         </div>
+        {this.dropMenu()}
       </div>
     )
   }
