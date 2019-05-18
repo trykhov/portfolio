@@ -74,6 +74,10 @@
   font-size: 1.3vw;
 }
 
+.resume:hover {
+  background-color: #a43737;
+}
+
 #social {
   display: flex;
   justify-content: space-between;
@@ -83,7 +87,6 @@
 
 #status {
   width: 70%;
-  background-color: #0b8457;
   margin: 0 auto 20px;
   padding: 10px;
   border-radius: 16px;
@@ -96,6 +99,10 @@
 .ui.primary.button {
   background-color: #f5564e;
   font-family: "Montserrat", cursive;
+}
+
+.ui.primary.button:hover {
+  background-color: #a43737;
 }
 
 

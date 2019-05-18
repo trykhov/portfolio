@@ -40,9 +40,6 @@ class Header extends React.Component {
               </Link>
             </div>
           </div>
-          <div className="picture">
-            <img id="profile" src={profile}/>
-          </div>
         </div>
       </section>
     )

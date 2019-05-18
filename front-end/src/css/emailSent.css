@@ -1,0 +1,29 @@
+#confirm {
+  height: 100%;
+}
+
+#confirm h2 {
+  color: black;
+  margin: 30px;
+}
+
+#contain {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px;
+}
+
+#home-button {
+  display: inline;
+  padding: 10px;
+  background: #f5564e;
+  font-family: "Montserrat", cursive;
+  font-size: 1.5vw;
+  border-radius: 16px;
+  color: #fff;
+}
+
+#home-button:hover {
+  background-color: #a43737;
+}
