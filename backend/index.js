@@ -39,8 +39,8 @@ app.post('/send_email', function(req, res) {
     + "<p>Try</p>"
   };
 
-  sgMail.send(msg);
-
+  // sgMail.send(msg);
+  res.redirect("/email-confirmation");
 })
 
 
