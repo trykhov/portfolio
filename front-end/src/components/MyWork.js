@@ -13,7 +13,7 @@ class MyWork extends React.Component {
           <h2> Portfolio </h2>
           <div className="project">
             <div className="img-container">
-              <img src={g12} />
+              <img src={g12} alt="g12site"/>
             </div>
             <div className="info">
               <p className="notes">
@@ -29,7 +29,7 @@ class MyWork extends React.Component {
           <div className="border"></div>
           <div className="project">
             <div className="img-container">
-              <img src={yugioh} />
+              <img src={yugioh} alt="yugioh-site"/>
             </div>
             <div className="info">
               <p className="notes">
@@ -44,7 +44,7 @@ class MyWork extends React.Component {
           <div className="border"></div>
           <div className="project">
             <div className="img-container">
-              <img src={marvel} />
+              <img src={marvel} alt="marvel-game"/>
             </div>
             <div className="info">
               <p className="notes">

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 class Contact extends React.Component {
   renderInput = ({ input, label }) => {
-    if (label == "Email") {
+    if (label === "Email") {
       return (
         <input
           className="client-input"

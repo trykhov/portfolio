@@ -12,12 +12,12 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // open the build folder in front-end
-app.use(express.static(path.join(__dirname, 'front-end', 'build')));
+app.use(express.static(path.join(__dirname, '../front-end', 'build')));
 
 
 // for any path, go into the index.html file that's in the build, which is in the front-end folder
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'front-end', 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '../front-end', 'build', 'index.html'));
 })
 
 // extract api key
@@ -39,11 +39,19 @@ app.post('/send_email', function(req, res) {
     + "<p>Try</p>"
   };
 
-  // sgMail.send(msg);
+  const msgToMe = {
+    to: keys.from,
+    from: "delivery@trykhov.com",
+    subject: 'Message from your site',
+    html: `<p>${req.body.message}</p>`
+  }
+  // console.log(msg);
+  // console.log(msgToMe);
+  sgMail.send(msg);
+  sgMail.send(msgToMe);
   res.redirect("/email-confirmation");
 })
 
 
-
-app.set("port", process.env.PORT || 5000);
+app.set("port", process.env.PORT || 4000);
 app.listen(app.get("port"), () => console.log(`listening on port ${app.get("port")}`));

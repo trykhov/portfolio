@@ -1,7 +1,5 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import background from '../img/background.jpg';
-import profile from '../img/profile.png';
 import js from '../img/js.png';
 import html from '../img/html.png';
 import css from '../img/css.png';

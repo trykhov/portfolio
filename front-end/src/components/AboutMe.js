@@ -1,7 +1,6 @@
 import React from 'react';
-import Navigation from './Navigation';
 import '../css/aboutme.css';
-import headshot from '../img/headshot.jpg';
+import headshot from '../img/headshot.png';
 
 class AboutMe extends React.Component {
 
@@ -11,7 +10,7 @@ class AboutMe extends React.Component {
         <div id="about-container">
           <h2> About Me </h2>
           <div id="about-image">
-            <img id="profile" src={headshot}/>
+            <img id="profile" src={headshot} alt="headshot"/>
           </div>
           <div id="about-text">
             I'm a web developer currently living in the Bay Area.

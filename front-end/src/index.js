@@ -6,7 +6,7 @@ import EmailSent from './components/EmailSent';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
-import { BrowserRouter, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 const store = createStore(reducers);
 

@@ -89,7 +89,7 @@ class Resume extends React.Component {
             <div className="school">
               <div className="grad-info">
                 <div className="symbol">
-                  <img src={berkeley} />
+                  <img src={berkeley} alt="seal"/>
                   <h3>University of California, Berkeley</h3>
                 </div>
                 <div className="graduation">
