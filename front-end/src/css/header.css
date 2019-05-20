@@ -82,7 +82,7 @@ h1 {
   }
 
   #header-container {
-    height: 600px;
+    min-height: 100%;
   }
 
   #more-info div {

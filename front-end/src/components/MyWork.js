@@ -49,7 +49,7 @@ class MyWork extends React.Component {
             <div className="info">
               <p className="notes">
                 This was another fun project that I made when I was practicing my <strong>JavaScript</strong>. It's a memory game
-                based off of the Marvel movies. One awesome that I implemented is every element is randomly placed.
+                based off of the Marvel movies. One awesome feature that I implemented is every element is randomly placed.
                 This makes it so that no two games are the same despite the difficulty selected.
               </p>
               <p className="source">Play Here: <a href={"https://trykhov.github.io/marvel_memory_game/"}> Marvel Memory Game</a></p>

@@ -4,7 +4,11 @@ import Header from './Header';
 import MyWork from './MyWork';
 import AboutMe from './AboutMe';
 import Contact from './Contact';
+import ReactGA from 'react-ga';
 
+
+ReactGA.initialize('UA-140490976-2');
+ReactGA.pageview('/');
 
 class App extends React.Component {
 
@@ -13,6 +17,10 @@ class App extends React.Component {
   }
 
   render() {
+    ReactGA.event({
+      category: this.props.history.location.hash,
+      action: "Pressed"
+    })
     return (
       <div>
         <Navigation />

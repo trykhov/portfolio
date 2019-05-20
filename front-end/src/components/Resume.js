@@ -2,6 +2,10 @@ import React from 'react';
 import Navigation from './Navigation';
 import '../css/resume.css';
 import berkeley from '../img/berkeley-logo.png';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-140490976-2');
+ReactGA.pageview('/resume');
 
 class Resume extends React.Component {
 
