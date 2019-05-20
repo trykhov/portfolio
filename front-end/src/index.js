@@ -7,13 +7,9 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
 import { BrowserRouter, Route } from 'react-router-dom';
-import ReactGA from 'react-ga';
 
 const store = createStore(reducers);
 
-// ReactGA.initialize('UA-140490976-2');
-// ReactGA.pageview('/');
-// ReactGA.pageview('/resume');
 
 ReactDOM.render(
   <Provider store={store}>
