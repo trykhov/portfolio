@@ -42,11 +42,11 @@ app.post('/send_email', function(req, res) {
   const msgToMe = {
     to: keys.from,
     from: "delivery@trykhov.com",
-    subject: 'Message from your site',
-    html: `<p>${req.body.message}</p>`
+    subject: 'Message from ' + req.body.name,
+    html: `<p>${req.body.message}</p><br>
+          <p>Sender's email: ${req.body.email}</p>`
   }
-  // console.log(msg);
-  // console.log(msgToMe);
+  
   sgMail.send(msg);
   sgMail.send(msgToMe);
   res.redirect("/email-confirmation");
