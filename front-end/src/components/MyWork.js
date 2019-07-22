@@ -13,6 +13,22 @@ class MyWork extends React.Component {
           <h2> Portfolio </h2>
           <div className="project">
             <div className="img-container">
+              <img id="baseball" src={require('../img/baseball_app_demo.gif')} alt="baseball_app"/>
+            </div>
+            <div className="info">
+              <p className="notes">
+                This is a web application that was inspired by a friend's idea for a drinking game he invented called "Baseball".
+                It play similarily to the real game of baseball. This app was made to keep track of score as well as batter rotation and
+                other logistics such as strikes, outs, and innings. I created this app using <strong>React.js</strong>. Since this
+                app required a lot state management to keep track of score and other logistics, I used <strong>Redux</strong>.
+              </p>
+              <p className="source">Try the App Here: <a href={"https://trykhov.github.io/baseball_tracker/#/"}>Baseball Tracker</a></p>
+              <p className="source">Source Code: <a href={"https://github.com/trykhov/baseball_tracker"}>Github</a></p>
+            </div>
+          </div>
+          <div className="border"></div>
+          <div className="project">
+            <div className="img-container">
               <img src={g12} alt="g12site"/>
             </div>
             <div className="info">
