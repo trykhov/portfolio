@@ -18,7 +18,7 @@ class Header extends React.Component {
         <div id="header-content">
           <div className="banner">
             <span>Hi, I'm Try and I'm a</span>
-            <h1>Software Developer</h1>
+            <h1>Software Engineer</h1>
             <span>skilled in the following languages, frameworks, and libraries:</span>
             <div id="tech">
               <img id="tech-image" src={js} alt="js" title="javascript"/>

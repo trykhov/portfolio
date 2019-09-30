@@ -13,7 +13,7 @@ class AboutMe extends React.Component {
             <img id="profile" src={headshot} alt="headshot"/>
           </div>
           <div id="about-text">
-            I'm a software developer currently living in the Bay Area.
+            I'm a software engineer currently living in the Bay Area.
             I believe that great products are created through an engaging user experience.
             Whether it's a game or an application that provides impactful solutions, my passion
             lies in making those experiences engaging and memorable.       
